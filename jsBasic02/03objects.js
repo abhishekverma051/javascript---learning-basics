@@ -95,3 +95,17 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+/// destructuring a object
+const course = {
+    coursename: "js with abhi",
+    price : "999",
+    courseInstructor: "abhi"
+}
+const {courseInstructor} =course //  equals to course.courseInstructor
+// we just need to write courseInstructor to call this object
+console.log(courseInstructor); 
+
+// or
+const {courseInstructor: instructor}=course
+console.log(instructor);
